@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="dd_deviceColor" format="color"/>
+    <attr name="dd_deviceBackColor" format="color"/>
+    <attr name="dd_centerCircleColor" format="color" />
+
+    <attr name="dd_speedBackgroundColor" format="color" />
+    <attr name="dd_withEffects" format="boolean" />
+
+    <attr name="dd_orientation" format="enum" >
+        <enum name="HORIZONTAL" value="0" />
+        <enum name="VERTICAL" value="1" />
+    </attr>
+
+    <attr name="dd_image" format="reference" />
+
+    <declare-styleable name="Gauge">
+        <attr name="dd_textColor" format="color" />
+        <attr name="dd_speedTextColor" format="color"/>
+        <attr name="dd_unitTextColor" format="color"/>
+        <attr name="dd_withTremble" format="boolean" />
+        <attr name="dd_speedTextSize" format="dimension" />
+        <attr name="dd_textSize" format="dimension" />
+        <attr name="dd_unit" format="string" />
+        <attr name="dd_use_unit" format="boolean"/>
+
+        <attr name="dd_unitTextSize" format="dimension"/>
+        <attr name="dd_trembleDegree" format="float" />
+        <attr name="dd_trembleDuration" format="integer" />
+        <attr name="dd_lowSpeedPercent" format="integer" />
+        <attr name="dd_mediumSpeedPercent" format="integer" />
+        <attr name="dd_textRightToLeft" format="boolean" />
+
+        <attr name="dd_minSpeed" format="float" />
+        <attr name="dd_maxSpeed" format="float" />
+
+        <attr name="dd_accelerate" format="float" />
+        <attr name="dd_decelerate" format="float" />
+
+        <attr name="dd_speedTextTypeface" format="string" />
+        <attr name="dd_textTypeface" format="string" />
+
+        <attr name="dd_speedTextPosition" format="enum" >
+            <enum name="TOP_LEFT" value="0" />
+            <enum name="TOP_CENTER" value="1" />
+            <enum name="TOP_RIGHT" value="2" />
+            <enum name="LEFT" value="3" />
+            <enum name="CENTER" value="4" />
+            <enum name="RIGHT" value="5" />
+            <enum name="BOTTOM_LEFT" value="6" />
+            <enum name="BOTTOM_CENTER" value="7" />
+            <enum name="BOTTOM_RIGHT" value="8" />
+        </attr>
+        <attr name="dd_unitUnderSpeedText" format="boolean" />
+        <attr name="dd_unitSpeedInterval" format="dimension" />
+        <attr name="dd_speedTextPadding" format="dimension" />
+        <attr name="dd_speedTextFormat" format="enum" >
+            <enum name="INTEGER" value="0" />
+            <enum name="FLOAT" value="1" />
+        </attr>
+        <attr name="dd_tickTextFormat" format="enum" >
+            <enum name="INTEGER" value="0" />
+            <enum name="FLOAT" value="1" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="Speedometer"  parent="Gauge">
+        <attr name="dd_indicatorColor" format="color" />
+        <attr name="dd_withIndicatorLight" format="boolean" />
+        <attr name="dd_indicatorLightColor" format="color" />
+        <attr name="dd_markColor" format="color" />
+        <attr name="dd_lowSpeedColor" format="color" />
+        <attr name="dd_mediumSpeedColor" format="color" />
+        <attr name="dd_highSpeedColor" format="color" />
+        <attr name="dd_backgroundCircleColor" format="color" />
+        <attr name="dd_deviceWidth" format="dimension" />
+
+        <attr name="dd_startDegree" format="integer" />
+        <attr name="dd_endDegree" format="integer" />
+
+        <attr name="dd_indicatorWidth" format="dimension" />
+
+        <attr name="dd_indicator" format="enum" >
+            <enum name="NoIndicator" value="0" />
+            <enum name="NormalIndicator" value="1" />
+            <enum name="NormalSmallIndicator" value="2" />
+            <enum name="TriangleIndicator" value="3" />
+            <enum name="SpindleIndicator" value="4" />
+            <enum name="NewCustomIndicator" value="5" />
+            <enum name="HalfLineIndicator" value="6" />
+            <enum name="QuarterLineIndicator" value="7" />
+            <enum name="KiteIndicator" value="8" />
+            <enum name="NeedleIndicator" value="9" />
+            <enum name="NewCustomIndicatorWithCircle" value="10"/>
+        </attr>
+
+        <attr name="dd_deviceMode" format="enum" >
+            <enum name="NORMAL" value="0" />
+            <enum name="LEFT" value="1" />
+            <enum name="TOP" value="2" />
+            <enum name="RIGHT" value="3" />
+            <enum name="BOTTOM" value="4" />
+            <enum name="TOP_LEFT" value="5" />
+            <enum name="TOP_RIGHT" value="6" />
+            <enum name="BOTTOM_RIGHT" value="7" />
+            <enum name="BOTTOM_LEFT" value="8" />
+        </attr>
+
+        <attr name="dd_cutPadding" format="dimension" />
+
+        <attr name="dd_tickNumber" format="integer" />
+        <attr name="dd_tickRotation" format="boolean" />
+        <attr name="dd_tickPadding" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RaySpeedometer" parent="Speedometer">
+        <attr name="dd_speedBackgroundColor" />
+        <attr name="dd_withEffects" />
+        <attr name="dd_rayColor" format="color"/>
+        <attr name="dd_degreeBetweenMark" format="integer"/>
+        <attr name="dd_markWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomSpeedometer" parent="Speedometer">
+        <attr name="dd_centerCircleColor" />
+        <attr name="dd_deviceColor" />
+        <attr name="dd_pointerColor" format="color"/>
+        <attr name="dd_withPointer" format="boolean"/>
+    </declare-styleable>
+
+
+
+</resources>
