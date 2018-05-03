@@ -73,17 +73,17 @@ public class NewCustomIndicator extends Indicator<NewCustomIndicator> {
 
         RectF oval = new RectF();
 
-        oval.set(getCenterX() - dpTOpx(45) / getDensity(), getCenterY() - dpTOpx(45) / getDensity(), getCenterX() + dpTOpx(45) / getDensity(), getCenterY() + dpTOpx(45) / getDensity());
+        oval.set(getCenterX() - dpTOpx(35), getCenterY() - dpTOpx(35), getCenterX() + dpTOpx(35), getCenterY() + dpTOpx(35));
 
         circlePath.addArc(oval, 0, 360);
         circlePartPath.addArc(oval, 235, 70);
 
 
-        indicatorPath.moveTo(getCenterX(), getCenterX() - dpTOpx(45) / getDensity() - dpTOpx(8) * getDensity());
-        indicatorPath.lineTo(getCenterX(), getCenterY() - dpTOpx(45) / getDensity());
+        indicatorPath.moveTo(getCenterX(), getCenterX() - dpTOpx(35) - dpTOpx(10.5f));
+        indicatorPath.lineTo(getCenterX(), getCenterY() - dpTOpx(35));
 
         thinLinePath.moveTo(getCenterX(), getPadding());
-        thinLinePath.lineTo(getCenterX(), getCenterY() - dpTOpx(45) / getDensity());
+        thinLinePath.lineTo(getCenterX(), getCenterY() - dpTOpx(35));
 
         circlePaint.setStyle(Paint.Style.STROKE);
         circlePaint.setStrokeWidth(getIndicatorWidth() / 2f);

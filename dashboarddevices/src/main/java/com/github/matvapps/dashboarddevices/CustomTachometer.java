@@ -15,7 +15,6 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.util.Log;
 
-import com.github.matvapps.dashboarddevices.components.Indicators.NewCustomIndicator;
 import com.github.matvapps.dashboarddevices.components.Indicators.NoIndicator;
 
 
@@ -198,11 +197,8 @@ public class CustomTachometer extends Tachometer {
         middleMarkPath.lineTo(getSize() * 0.5f, getPadding() + getSize() / 30);
 
         bigMarkPath.reset();
-        bigMarkPath.moveTo(getSize() * 0.5f, getPadding() + dpTOpx(47));
-        bigMarkPath.lineTo(getSize() * 0.5f, getPadding() + getSize() / 33f + dpTOpx(47));
-
-
-        Log.d("TAG", "updateBackgroundBitmap: " + getDensity() );
+        bigMarkPath.moveTo(getSize() * 0.5f, getPadding() + dpTOpx(40));
+        bigMarkPath.lineTo(getSize() * 0.5f, getPadding() + getSize() / 33f + dpTOpx(40));
 
 
         c.save();

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#010C1E">
+    android:background="#010C1E"
+    android:orientation="vertical">
 
 
     <LinearLayout
@@ -22,9 +22,13 @@
 
             <com.github.matvapps.dashboarddevices.CustomSpeedometer
                 android:id="@+id/pointerSpeedometer"
-                android:layout_width="275dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginStart="45dp"
                 app:dd_indicator="NewCustomIndicator"
                 app:dd_indicatorColor="#36ffffff"
                 app:dd_textSize="15sp"
@@ -64,9 +68,13 @@
 
             <com.github.matvapps.dashboarddevices.CustomTachometer
                 android:id="@+id/pointerTachometer"
-                android:layout_width="275dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginStart="45dp"
                 app:dd_indicator="NewCustomIndicatorWithCircle"
                 app:dd_indicatorColor="#36ffffff"
                 app:dd_textSize="15sp"

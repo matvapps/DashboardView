@@ -10,7 +10,7 @@ import com.github.matvapps.dashboarddevices.CustomTachometer;
 
 import java.util.Locale;
 
-public class PointerActivity extends AppCompatActivity {
+public class DashboardActivity extends AppCompatActivity {
 
     CustomSpeedometer customSpeedometer;
     SeekBar seekBarSpeed;
@@ -23,7 +23,7 @@ public class PointerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pointer);
+        setContentView(R.layout.activity_dashboard);
 
         customSpeedometer = findViewById(R.id.pointerSpeedometer);
         seekBarSpeed = findViewById(R.id.seekBarSpeed);

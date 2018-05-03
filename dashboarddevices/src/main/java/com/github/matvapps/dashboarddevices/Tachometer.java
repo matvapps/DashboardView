@@ -65,7 +65,7 @@ public abstract class Tachometer extends Device {
      */
     private boolean tickRotation = false;
     private float initTickPadding = 0;
-    private int tickPadding = (int) dpTOpx(20f);
+    private int tickPadding = (int) dpTOpx(15f);
     private OnPrintTickLabel onPrintTickLabel;
 
     public Tachometer(Context context) {
@@ -233,7 +233,7 @@ public abstract class Tachometer extends Device {
                 , colors, new float[]{0f, sweep / 270f, sweep / 360f});
 
         indicatorLightPaint.setShader(lightSweep);
-        indicatorLightPaint.setStrokeWidth(indicator.getLightBottom() - indicator.getTop() - dpTOpx(45) / getDensity());
+        indicatorLightPaint.setStrokeWidth(indicator.getLightBottom() - indicator.getTop() - dpTOpx(35));
 
         float risk = indicator.getTop() + indicatorLightPaint.getStrokeWidth() * .5f;
         RectF speedometerRect = new RectF(risk, risk, getSize() - risk, getSize() - risk);
