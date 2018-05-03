@@ -60,7 +60,7 @@ public class CustomTachometer extends Tachometer {
         super.setTextColor(0xFFFFFFFF);
         super.setSpeedTextColor(0xFFFFFFFF);
         super.setUnitTextColor(0xFFFFFFFF);
-        super.setSpeedTextSize(dpTOpx(24f));
+        super.setSpeedTextSize(dpTOpx(20f));
         super.setUnitTextSize(dpTOpx(15f));
         super.setSpeedTextFormat((byte) 0);
         super.setSpeedTextPosition(Position.CENTER);
@@ -72,8 +72,10 @@ public class CustomTachometer extends Tachometer {
         super.setIndicator(new NoIndicator(getContext())
                 .setIndicatorWidth(dpTOpx(48f))
                 .setIndicatorColor(0x36ffffff));
+
+        super.setTextSize(20f);
         super.setBackgroundCircleColor(0x00FFFFFF);
-        super.setSpeedometerWidth(dpTOpx(30f));
+        super.setSpeedometerWidth(dpTOpx(26.5f));
         super.setMaxSpeed(7010);
     }
 
@@ -124,7 +126,7 @@ public class CustomTachometer extends Tachometer {
     protected void onSizeChanged(int w, int h, int oldW, int oldH) {
         super.onSizeChanged(w, h, oldW, oldH);
 
-        float risk = getSpeedometerWidth() * 2.5f + getPadding();
+        float risk = getSpeedometerWidth() * 2.45f + getPadding();
         speedometerRect.set(risk, risk, getSize() - risk, getSize() - risk);
 
         float risk2 = getSpeedometerWidth() * 0.32f;

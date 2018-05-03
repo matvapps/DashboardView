@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.RectF;
+import android.util.Log;
 
 
 public class NewCustomIndicator extends Indicator<NewCustomIndicator> {
@@ -73,24 +74,25 @@ public class NewCustomIndicator extends Indicator<NewCustomIndicator> {
 
         RectF oval = new RectF();
 
-        oval.set(getCenterX() - dpTOpx(35), getCenterY() - dpTOpx(35), getCenterX() + dpTOpx(35), getCenterY() + dpTOpx(35));
+        oval.set(getCenterX() - getCenterX() * 0.205f, getCenterY() - getCenterX() * 0.205f, getCenterX() + getCenterX() * 0.205f, getCenterY() + getCenterX() * 0.205f);
 
         circlePath.addArc(oval, 0, 360);
-        circlePartPath.addArc(oval, 235, 70);
+        circlePartPath.addArc(oval, 245, 50);
 
 
-        indicatorPath.moveTo(getCenterX(), getCenterX() - dpTOpx(35) - dpTOpx(10.5f));
-        indicatorPath.lineTo(getCenterX(), getCenterY() - dpTOpx(35));
+        indicatorPath.moveTo(getCenterX(), getCenterX() - getCenterX() * 0.205f - getCenterX() * 0.07f);
+        indicatorPath.lineTo(getCenterX(), getCenterY() - getCenterX() * 0.205f);
 
         thinLinePath.moveTo(getCenterX(), getPadding());
-        thinLinePath.lineTo(getCenterX(), getCenterY() - dpTOpx(35));
+        thinLinePath.lineTo(getCenterX(), getCenterY() - getCenterX() * 0.205f);
+
 
         circlePaint.setStyle(Paint.Style.STROKE);
         circlePaint.setStrokeWidth(getIndicatorWidth() / 2f);
         circlePaint.setColor(getIndicatorColor());
 
         circlePartPaint.setStyle(Paint.Style.STROKE);
-        circlePartPaint.setStrokeWidth(getIndicatorWidth());
+        circlePartPaint.setStrokeWidth(getIndicatorWidth() / 1.6f);
         circlePartPaint.setColor(Color.WHITE);
 
         thinLinePaint.setStyle(Paint.Style.STROKE);
@@ -98,7 +100,7 @@ public class NewCustomIndicator extends Indicator<NewCustomIndicator> {
         thinLinePaint.setColor(getIndicatorColor());
 
         indicatorPaint.setStyle(Paint.Style.STROKE);
-        indicatorPaint.setStrokeWidth(getIndicatorWidth());
+        indicatorPaint.setStrokeWidth(getIndicatorWidth() / 1.6f);
         indicatorPaint.setColor(Color.WHITE);
     }
 

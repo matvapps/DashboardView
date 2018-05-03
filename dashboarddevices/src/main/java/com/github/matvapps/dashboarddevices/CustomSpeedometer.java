@@ -56,8 +56,8 @@ public class CustomSpeedometer extends Speedometer {
         super.setTextColor(0xFFFFFFFF);
         super.setSpeedTextColor(0xFFFFFFFF);
         super.setUnitTextColor(0xFFFFFFFF);
-        super.setSpeedTextSize(dpTOpx(24f));
-        super.setUnitTextSize(dpTOpx(15f));
+        super.setSpeedTextSize(dpTOpx(16f));
+        super.setUnitTextSize(dpTOpx(10f));
         super.setSpeedTextFormat((byte) 0);
         super.setSpeedTextPosition(Position.CENTER);
         super.setSpeedTextTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
@@ -68,6 +68,7 @@ public class CustomSpeedometer extends Speedometer {
         super.setIndicator(new NoIndicator(getContext())
                 .setIndicatorWidth(dpTOpx(48f))
                 .setIndicatorColor(0x36ffffff));
+        super.setTextSize(16.5f);
         super.setBackgroundCircleColor(0x00FFFFFF);
         super.setSpeedometerWidth(dpTOpx(20f));
         super.setMaxSpeed(240);

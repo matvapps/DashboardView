@@ -184,7 +184,6 @@ public abstract class Gauge extends View {
 
     private void init() {
         textPaint.setColor(0xFF000000);
-        textPaint.setTextSize(dpTOpx(10f));
         textPaint.setTextAlign(Paint.Align.CENTER);
         speedTextPaint.setColor(0xFF000000);
         speedTextPaint.setTextSize(dpTOpx(18f));
@@ -410,7 +409,7 @@ public abstract class Gauge extends View {
 
         if (unitUnderSpeedText) {
             if (!useUnit) {
-                unitSpeedInterval = -dpTOpx(20);
+                unitSpeedInterval = -dpTOpx(15);
                 speedText = String.valueOf(Integer.parseInt(speedText) / 1000);
             } else {
                 speedUnitTextCanvas.drawText(unit, speedUnitTextBitmap.getWidth() * .5f

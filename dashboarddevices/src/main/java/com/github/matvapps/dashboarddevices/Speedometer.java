@@ -234,7 +234,7 @@ public abstract class Speedometer extends Device {
                 , colors, new float[]{0f, sweep / 270f, sweep / 360f});
 
         indicatorLightPaint.setShader(lightSweep);
-        indicatorLightPaint.setStrokeWidth(indicator.getLightBottom() - indicator.getTop() - dpTOpx(35));
+        indicatorLightPaint.setStrokeWidth(indicator.getLightBottom() - indicator.getTop() - indicator.getCenterX() * 0.23f);
 
         float risk = indicator.getTop() + indicatorLightPaint.getStrokeWidth() * .5f;
         RectF speedometerRect = new RectF(risk, risk, getSize() - risk, getSize() - risk);
