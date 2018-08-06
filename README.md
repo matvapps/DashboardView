@@ -182,7 +182,7 @@ or Maven:
 
 
 
-Take a look at the [sample project](sample) for more information.
+Take a look at the [sample project](app) for more information.
 
 ### License 
 
@@ -203,5 +203,5 @@ limitations under the License.
 ```
 
 
-[sample]: <https://github.com/matvapps/DashboardView/tree/master/app>
+[app]: <https://github.com/matvapps/DashboardView/tree/master/app>
 
