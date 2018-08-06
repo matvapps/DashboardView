@@ -2,7 +2,7 @@
 
 ### Preview
 
-<img src="/dashboard_preview.gif?raw=true" width="640px">
+<img src="/images/dashboard_preview.gif?raw=true" width="640px">
 
 
 Easy in use android library for creating dashboard. With this library you
