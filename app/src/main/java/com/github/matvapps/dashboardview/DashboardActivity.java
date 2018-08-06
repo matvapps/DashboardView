@@ -8,13 +8,13 @@ import java.util.Locale;
 
 public class DashboardActivity extends AppCompatActivity {
 
-    DashboardSpeedometer customSpeedometer;
-    SeekBar seekBarSpeed;
+    private DashboardSpeedometer customSpeedometer;
+    private SeekBar seekBarSpeed;
 
-    DashboardTachometer customTachometer;
-    SeekBar seekBarTurnovers;
+    private DashboardTachometer customTachometer;
+    private SeekBar seekBarTurnovers;
 
-    TextView textSpeed, textTurnovers;
+    private TextView textSpeed, textTurnovers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,12 +67,5 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-//        pointerSpeedometer.setOnSpeedChangeListener(new OnSpeedChangeListener() {
-//            @Override
-//            public void onSpeedChange(Gauge gauge, boolean isSpeedUp, boolean isByTremble) {
-//                textSpeedChange.setText(String.format(Locale.getDefault(), "onSpeedChange %d"
-//                        , gauge.getCurrentIntSpeed()));
-//            }
-//        });
     }
 }

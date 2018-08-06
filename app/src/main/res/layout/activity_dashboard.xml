@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.github.matvapps.dashboarddevices.DashboardSpeedometer
+            <com.github.matvapps.dashboardview.DashboardSpeedometer
                 android:id="@+id/pointerSpeedometer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -30,7 +30,6 @@
                 android:layout_marginRight="45dp"
                 android:layout_marginStart="45dp"
                 app:dd_indicator="DashboardIndicator"
-                app:dd_indicatorColor="#36ffffff"
                 app:dd_tickNumber="13" />
 
 
@@ -65,7 +64,7 @@
             android:layout_marginTop="4dp"
             android:orientation="vertical">
 
-            <com.github.matvapps.dashboarddevices.DashboardTachometer
+            <com.github.matvapps.dashboardview.DashboardTachometer
                 android:id="@+id/pointerTachometer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,7 +74,6 @@
                 android:layout_marginRight="45dp"
                 android:layout_marginStart="45dp"
                 app:dd_indicator="DashboardIndicatorWithCircle"
-                app:dd_indicatorColor="#36ffffff"
                 app:dd_tickNumber="8"
                 app:dd_use_unit="false" />
 

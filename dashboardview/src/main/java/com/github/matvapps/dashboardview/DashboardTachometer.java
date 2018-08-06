@@ -73,7 +73,7 @@ public class DashboardTachometer extends Tachometer {
                 .setIndicatorWidth(dpTOpx(48f))
                 .setIndicatorColor(0x36ffffff));
 
-        super.setTextSize(20f);
+        super.setTextSize(dpTOpx(14f));
         super.setBackgroundCircleColor(0x00FFFFFF);
         super.setSpeedometerWidth(dpTOpx(26.5f));
         super.setMaxValue(7010);
@@ -113,7 +113,7 @@ public class DashboardTachometer extends Tachometer {
         pointerColor = a.getColor(R.styleable.DashboardSpeedometer_dd_pointerColor, pointerColor);
         circlePaint.setColor(a.getColor(R.styleable.DashboardSpeedometer_dd_centerCircleColor, circlePaint.getColor()));
         withPointer = a.getBoolean(R.styleable.DashboardSpeedometer_dd_withPointer, withPointer);
-        super.setTextSize(a.getDimension(R.styleable.Device_dd_markTextSize, dpTOpx(11f)));
+//        super.setTextSize(a.getDimension(R.styleable.Device_dd_markTextSize, dpTOpx(11f)));
         a.recycle();
         initAttributeValue();
     }

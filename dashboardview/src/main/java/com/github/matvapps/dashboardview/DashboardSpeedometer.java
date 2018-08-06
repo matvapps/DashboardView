@@ -108,7 +108,7 @@ public class DashboardSpeedometer extends Speedometer {
         pointerColor = a.getColor(R.styleable.DashboardSpeedometer_dd_pointerColor, pointerColor);
         circlePaint.setColor(a.getColor(R.styleable.DashboardSpeedometer_dd_centerCircleColor, circlePaint.getColor()));
         withPointer = a.getBoolean(R.styleable.DashboardSpeedometer_dd_withPointer, withPointer);
-        super.setTextSize(a.getDimension(R.styleable.Device_dd_markTextSize, dpTOpx(11f)));
+//        super.setTextSize(a.getDimension(R.styleable.Device_dd_markTextSize, dpTOpx(11f)));
 
         a.recycle();
         initAttributeValue();

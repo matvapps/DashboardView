@@ -24,7 +24,7 @@ public abstract class Indicator<I extends Indicator> {
     private float indicatorWidth;
     private float viewSize;
     private float speedometerWidth;
-    private int indicatorColor = 0xff2196F3;
+    private int indicatorColor = 0x36ffffff;
     private int padding;
     private boolean inEditMode;
 
