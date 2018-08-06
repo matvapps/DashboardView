@@ -4,18 +4,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.SeekBar;
 import android.widget.TextView;
-
-import com.github.matvapps.dashboarddevices.CustomSpeedometer;
-import com.github.matvapps.dashboarddevices.CustomTachometer;
-
 import java.util.Locale;
 
 public class DashboardActivity extends AppCompatActivity {
 
-    CustomSpeedometer customSpeedometer;
+    DashboardSpeedometer customSpeedometer;
     SeekBar seekBarSpeed;
 
-    CustomTachometer customTachometer;
+    DashboardTachometer customTachometer;
     SeekBar seekBarTurnovers;
 
     TextView textSpeed, textTurnovers;
@@ -38,7 +34,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 textTurnovers.setText(String.format(Locale.getDefault(), "%d", i));
-                customTachometer.speedTo(seekBarTurnovers.getProgress());
+                customTachometer.moveTo(seekBarTurnovers.getProgress());
             }
 
             @Override
@@ -56,7 +52,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 textSpeed.setText(String.format(Locale.getDefault(), "%d", progress));
-                customSpeedometer.speedTo(seekBarSpeed.getProgress());
+                customSpeedometer.moveTo(seekBarSpeed.getProgress());
 
             }
 

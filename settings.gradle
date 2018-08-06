@@ -1,1 +1,1 @@
-include ':app', ':speedviewlib', ':dashboarddevices'
+include ':app', ':dashboardview'
